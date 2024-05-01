@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="Contacto.css">
+    <title>Contacto</title>
+</head>
+<body>
+    <section>
+        <header>
+            <a href="index.html" target="_blank" class="logo">Gonzalo Castro</a>
+            <ul class="navbar">
+                <li>
+                    <a href="QuienSoy.html" target="_blank">Quien soy</a>
+                </li>
+                <li>
+                    <a href="CV.html" target="_blank">CV</a>
+                </li>
+                <li>
+                    <a href="Proyectos.html" target="_blank">Proyectos</a>
+                </li>
+                <li>
+                    <a href="Contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </header>
+        <div class="contenido">
+                        <h1>Formulario de contacto</h1>
+            <br><form name="formulario" method="post" action="mailto:raul.rodriguez@proeducaglobal.com">
+                <fieldset>
+                    <legend>Datos Personales</legend>
+                    <p>Nombre: <input type="text" name="nombre" id="nombre" placeholder="Indique su nombre" required></p>
+                    <p>Apellidos: <input type="text" name="apellidos" id="apellidos" placeholder="Indique sus apellidos" required></p>
+                    <p>DNI/NIE/CIF: <input type="text" name="DNI" id="DNI" placeholder="Indique su DNI con letra" required></p>
+                    <p>Correo electrónico: <input type="email" name="correo electrónico" id="mail" placeholder="Indique su correo electrónico" required></p>
+                    <p>Usuario: <input type="radio" name="usuario" id="particular" checked>Particular
+                                <input type="radio" name="usuario" id="empresa">Empresa</p>
+                    <p>Fecha de nacimiento: <input type="date" name="fecha de nacimiento" id="fecha_de_nacimiento" required></p>
+                    <br>
+                    <fieldset>
+                        <legend>Dirección  Postal:</legend>
+                            <p>Calle: <input type="text" name="calle" id="calle" placeholder="Calle o Av." required></p>
+                            <p>Número: <input type="text" name="número" id="numero" placeholder="Número" required></p>
+                            <p>Piso: <input type="text" name="piso" id="piso" placeholder="Piso"></p>
+                            <p>CP: <input type="text" name="CP" id="CP" placeholder="Código Postal" required></p>
+                            <p>Ciudad: <input type="text" name="ciudad" id="ciudad" placeholder="Ciudad" required></p>
+                    </fieldset>
+                    </fieldset>
+                    <br>
+                    <p>Motivo de contacto:
+                        <select name="motivo" id="motivo" required>
+                            <option value="Creación">Creación de página web</option>
+                            <option value="Mantenimiento">Mantenimiento de web ya existente</option>
+                            <option value="Precios">Lista de precios</option>
+                            <option value="Vacantes">Vacantes a puestos activos</option>
+                            <option value="Otras">Otras consultas</option>
+                        </select>
+                    </p>
+                    <p>Comentarios:</p>
+                    <p><textarea name="comentarios" id="comentarios" cols="50" rows="8" placeholder="Inserte su comentario..."></textarea></p>
+                    <p><input type="submit" value="Enviar" class="botonera">
+                        <input type="reset" value="Borrar" class="botonera">
+                        <input type="file" name="Adjuntar" class="botonera">
+                    </p>
+                </form>
+        </div>
+        <div class="copyright">
+            <p>&copy;Web Personal creada para la materia de Lenguajes de Marcas del CFGS DAW.</p>
+        </div>
+        <ul class="redesSociales">
+            <li><a href="mailto:castroburillo@hotmail.com" target="_blank">
+                    <ion-icon name="mail-open-outline"></ion-icon>
+                </a>
+            </li>
+            <li><a href="https://es.linkedin.com/in/gonzalo-castro-burillo" target="_blank">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+            </li>
+            <li><a href="https://github.com/gon395" target="_blank">
+                    <ion-icon name="logo-github"></ion-icon>
+                </a>
+            </li>
+        </ul>     
+    </section>
+</body>
+</html>
